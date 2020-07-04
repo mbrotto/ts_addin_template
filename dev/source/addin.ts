@@ -15,7 +15,7 @@ class Addin {
     //Build the DOM
     private readonly displayButton: HTMLElement = document.getElementById("displayButton");
     private readonly hideButton: HTMLElement = document.getElementById("hideButton");
-    displayOutput = document.getElementById('displayOutput');
+    public displayOutput: HTMLElement = document.getElementById('displayOutput');
 
     //initialize addin 
     constructor (api) {
