@@ -62,8 +62,8 @@ geotab.addin.addinName = function () {
             addin = new Addin(api);
             api.getSession(function(session, server) {
                 var userName = session.userName;
-                var server = session.server;
-                console.log(server);
+                console.log(`userName: ${userName}`);
+                console.log(`server: ${server}`);
             })
             
             callback();
