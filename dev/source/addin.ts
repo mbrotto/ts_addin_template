@@ -15,7 +15,7 @@ class Addin {
     //Build the DOM
     private readonly displayButton: HTMLElement = document.getElementById("displayButton");
     private readonly hideButton: HTMLElement = document.getElementById("hideButton");
-    public displayOutput: HTMLElement = document.getElementById('displayOutput');
+    // public displayOutput: HTMLElement = document.getElementById('displayOutput');
 
     //initialize addin 
     constructor (api) {
@@ -23,12 +23,13 @@ class Addin {
     }
 
     private showOutput(){
-        // let displayOutput = document.getElementById('displayOutput');
-        this.displayOutput.innerHTML = 'Output text to display';
+        let displayOutput = document.getElementById('displayOutput');
+        displayOutput.innerHTML = 'Output text to display';
     }
 
     private hideOutput(){
-        this.displayOutput.innerHTML = '';
+        let displayOutput = document.getElementById('displayOutput');
+        displayOutput.innerHTML = '';
     }
 
     //render addin
