@@ -66,7 +66,7 @@ geotab.addin.addinName = function () {
                 var userName = session.userName;
                 console.log(`userName: ${userName}`);
                 console.log(`server: ${server}`);
-            })
+            });
             
             callback();
         },
